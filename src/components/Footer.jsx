@@ -1,4 +1,6 @@
 import React from 'react'
+import FacebookImage from '../assets/facebook.png'
+import TwitterImage from '../assets/twitter.png'
 
 const Footer = () => {
   return (
@@ -21,10 +23,10 @@ const Footer = () => {
           <div className="social-icons">
             {/* Add social media icons and links here */}
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src="src\assets\facebook.png" alt="Facebook" />
+              <img src={FacebookImage} alt="Facebook" />
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <img src="src\assets\twitter.png" alt="Twitter" />
+              <img src={TwitterImage} alt="Twitter" />
             </a>
             {/* Add more social media icons and links here */}
           </div>

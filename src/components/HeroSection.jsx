@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import FlipkartImage from '../assets/flipkart.jpg'
+import AmazonImage from '../assets/amazon.png'
+import GoogleImage from '../assets/google.png'
+import TwitterImage from '../assets/twitter.png'
+import SoftwareEngineerImage from '../assets/software-engineer.jpg'
+import ProductEngineerImage from '../assets/product engineer.jpg'
+import  DataScientistImage from '../assets/data scientist.jpg';
+
 
 const HeroSection = () => {
   const companyData = [
@@ -6,25 +14,25 @@ const HeroSection = () => {
       name: 'Flipkart',
       description: 'E-commerce company',
       jobOpenings: ['Software Engineer', 'Product Manager'],
-      imageUrl: 'src/assets/flipkart.jpg',
+      imageUrl: FlipkartImage,
     },
     {
       name: 'Amazon',
       description: 'E-commerce and cloud computing company',
       jobOpenings: ['Software Engineer', 'Data Scientist'],
-      imageUrl: 'src/assets/amazon.png',
+      imageUrl: AmazonImage,
     },
     {
       name: 'Google',
       description: ' Cloud computing and Search Analytic',
       jobOpenings: ['Software Engineer', 'Data Scientist'],
-      imageUrl: 'src/assets/google.png',
+      imageUrl: GoogleImage,
     },
     {
       name: 'Twitter',
       description: 'Social media Platform',
       jobOpenings: ['Software Engineer', 'Data Scientist'],
-      imageUrl: 'src/assets/twitter.png',
+      imageUrl:TwitterImage,
     },
     // Add more company data objects here
   ];
@@ -80,17 +88,17 @@ const HeroSection = () => {
       <h2>Job Categories</h2>
       <div className="categories-grid">
         <div className="category">
-          <img src="src\assets\software-engineer.jpg" alt="Software Engineer" />
+          <img src={SoftwareEngineerImage} alt="Software Engineer" />
           <span>Software Engineers</span>
           
         </div>
         <div className="category">
-          <img src="src\assets\product engineer.jpg" alt="Product Manager" />
+          <img src={ProductEngineerImage} alt="Product Manager" />
           <span>Product Managers</span>
           
         </div>
         <div className="category">
-          <img src="src\assets\data scientist.jpg" alt="Data Scientist" />
+          <img src={DataScientistImage } alt="Data Scientist" />
           <span>Data Scientists</span>
          
         </div>

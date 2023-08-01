@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import JoinModal from '../Modal/JoinModal';
+import Step1Image from '../assets/form.png';
+import Step2Image from '../assets/form2.png';
+import Step3Image from '../assets/job offer.png'
 
 const Applyjoin = () => {
   const [showModal, setShowModal] = useState(false);
@@ -24,7 +27,7 @@ const Applyjoin = () => {
           <h2>How to Join ?</h2>
           <div className="steps-grid">
             <div className="step">
-              <img src="src\assets\form.png" alt="Step 1" />
+              <img src={Step1Image} alt="Step 1" />
               <p>Click "Apply to Join" to start the application process.</p>
             </div>
             <div className="step">

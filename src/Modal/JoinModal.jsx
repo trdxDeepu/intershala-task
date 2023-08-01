@@ -3,6 +3,7 @@ import './joinModal.css';
 import { signInWithPopup, getAdditionalUserInfo } from 'firebase/auth';
 import { auth, provider,db } from '../Firebase';
 import {  collection, addDoc } from "firebase/firestore";
+import GoogleImage from '../assets/google.png'
 const JoinModal = ({ onClose }) => {
 
     const handleGoogleAuth = () => {
@@ -44,7 +45,7 @@ const JoinModal = ({ onClose }) => {
         <p>Choose an option to join:</p>
         <div className="join-options">
           <button className="google-button" onClick={handleGoogleAuth}>
-            <img src="src\assets\google.png" alt="Google" />
+            <img src={GoogleImage} alt="Google" />
             Sign Up/In with Google
           </button>
           
