@@ -84,18 +84,21 @@ h1 {
 
 
 .hero {
-  background-image: url('src/assets/techie.jpg');
+  background-image: url('https://st.depositphotos.com/1518767/3146/i/450/depositphotos_31463331-stock-photo-female-finger-pointing-at-digital.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
   padding: 100px 0;
   text-align: center;
+
 }
 
 .hero h1 {
   font-size: 36px;
   margin-bottom: 20px;
+ 
 }
+
 
 .company-list {
   display: flex;
@@ -127,6 +130,7 @@ h1 {
 
 .company-item span {
   margin-top: 10px;
+  color: #000000;
 }
 /* ... Existing CSS code ... */
 

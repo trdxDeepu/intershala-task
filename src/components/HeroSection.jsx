@@ -6,7 +6,7 @@ import TwitterImage from '../assets/twitter.png'
 import SoftwareEngineerImage from '../assets/software-engineer.jpg'
 import ProductEngineerImage from '../assets/product engineer.jpg'
 import  DataScientistImage from '../assets/data scientist.jpg';
-import HeroImage from '../assets/techie.jpg'
+
 
 
 const HeroSection = () => {
@@ -47,7 +47,7 @@ const HeroSection = () => {
   return (
     <>
       <section className="hero">
-        
+   
         <div className="container">
           <h1>Find Your Dream Job</h1>
           <p>Join thousands of companies and job seekers who trust our platform.</p>
