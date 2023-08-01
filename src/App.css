@@ -1,0 +1,337 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-msg {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #333;
+}
+
+.sign-in-button,
+.sign-out-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sign-out-button {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.sign-in-button:hover,
+.sign-out-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query to stack elements on small screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .logo-container {
+    margin-bottom: 10px;
+  }
+}
+
+
+.hero {
+  background-image: url('src/assets/techie.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+.search-bar input {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  width: 70%;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  width: 30%;
+}
+
+.search-bar button:active {
+  background-color: #003d80;
+  transform: translateY(2px);
+}
+
+.company-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-list div {
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+.job-categories {
+  padding: 80px 0;
+}
+
+.job-categories h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ...existing styles... */
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  cursor: pointer;
+  transition: transform 0.2s ease; 
+}
+
+.category span {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.category img:hover {
+  transform: scale(1.1);
+  border: 2px solid #007bff;
+}
+
+
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center;
+  
+}
+.features{
+  flex: 1;
+}
+
+.footer h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  flex: 0 0 auto; /* Set a fixed size for the Social Media section */
+  margin-left: 30px;
+  
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-icons img {
+  height: 30px;
+  width: 30px;
+}
+
+
+.apply-to-join-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  
+  border: 2px solid #007bff;
+}
+
+.apply-to-join-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  border-color: #0056b3;
+}
+
+.apply-to-join-button:active {
+  background-color: #003d80;
+  transform: scale(0.95);
+  box-shadow: none;
+  
+  border-color: #003d80;
+}
+
+
+
+
+.centered {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+
+.apply-to-join-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px; 
+  border-radius: 8px; 
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.apply-to-join-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.apply-to-join-button:active {
+  background-color: #003d80;
+  transform: scale(0.95); 
+  box-shadow: none; 
+}
+
+
+
+
+.join-steps {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.join-steps h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.step img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+/* ...remaining styles... */
