@@ -55,18 +55,24 @@ const HeroSection = () => {
       </section>
 
       {selectedCompany && (
-        <section className="company-details">
-          <div className="container">
-            <h2>{selectedCompany.name}</h2>
-            <p>{selectedCompany.description}</p>
-            <h3>Job Openings:</h3>
-            <ul>
-              {selectedCompany.jobOpenings.map((job, index) => (
-                <li key={index}>{job}</li>
-              ))}
-            </ul>
-          </div>
-        </section>
+       <section className="company-details">
+       <div className="container">
+         <div className="company-info">
+           <h2>{selectedCompany.name}</h2>
+           <p>{selectedCompany.description}</p>
+           <h3>Job Openings:</h3>
+           <ul>
+             {selectedCompany.jobOpenings.map((job, index) => (
+               <li key={index}>{job}</li>
+             ))}
+           </ul>
+         </div>
+         <div className="company-image">
+           <img src={selectedCompany.imageUrl} alt={selectedCompany.name} />
+         </div>
+       </div>
+     </section>
+     
       )}
 
       <section className="job-categories">

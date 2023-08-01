@@ -123,6 +123,61 @@ h1 {
 .company-item span {
   margin-top: 10px;
 }
+/* ... Existing CSS code ... */
+
+.company-details {
+  padding: 40px 0;
+}
+
+.company-details .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.company-details .company-info {
+  flex: 1; /* Let the company info take all available width */
+}
+
+.company-details h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.company-details p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.company-details .company-image {
+  flex: 1; /* Let the company image take all available width */
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+}
+
+.company-details img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 20px; /* Add some gap between the company info and the image */
+}
+
+.company-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.company-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.company-details li {
+  font-size: 16px;
+}
+
+/* ... Remaining CSS styles ... */
+
 
 /* ... Remaining CSS styles ... */
 
