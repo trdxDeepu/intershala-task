@@ -1,5 +1,5 @@
 import React from 'react';
-import './JoinModal.css';
+import './joinModal.css';
 import { signInWithPopup, getAdditionalUserInfo } from 'firebase/auth';
 import { auth, provider,db } from '../Firebase';
 import {  collection, addDoc } from "firebase/firestore";
