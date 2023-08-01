@@ -31,11 +31,11 @@ const Applyjoin = () => {
               <p>Click "Apply to Join" to start the application process.</p>
             </div>
             <div className="step">
-              <img src="src\assets\form2.png" alt="Step 2" />
+              <img src={Step2Image} alt="Step 2" />
               <p>Fill in your details and submit your application.</p>
             </div>
             <div className="step">
-              <img src="src\assets\job offer.png" alt="Step 3" />
+              <img src={Step3Image} alt="Step 3" />
               <p>Accept the job offer and join our platform.</p>
             </div>
           </div>
@@ -43,7 +43,7 @@ const Applyjoin = () => {
       </section>
 
       {showModal && <JoinModal onClose={closeModal} />}
-      {/* Render the JoinModal component when showModal is true */}
+      
     </>
   );
 };

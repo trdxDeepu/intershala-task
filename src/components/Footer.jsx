@@ -15,20 +15,20 @@ const Footer = () => {
             <li>Company Profile Pages</li>
             <li>Resume Builder</li>
             <li>Job Alerts</li>
-            {/* Add more features here */}
+          
           </ul>
         </div>
         <div className="social-media">
           <h3>Join us on Social Media</h3>
           <div className="social-icons">
-            {/* Add social media icons and links here */}
+            
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <img src={FacebookImage} alt="Facebook" />
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <img src={TwitterImage} alt="Twitter" />
             </a>
-            {/* Add more social media icons and links here */}
+        
           </div>
         </div>
       </div>

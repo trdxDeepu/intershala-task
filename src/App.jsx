@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Applyjoin from './components/Applyjoin';
 import HeroSection from './components/HeroSection';
 import {auth} from './Firebase'
-import { onAuthStateChanged,getAuth, signOut } from 'firebase/auth';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 
 
 const App = () => {
